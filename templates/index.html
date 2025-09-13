@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Stock Price Prediction</title>
   <style>
-    /* General page styling */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,7 +16,6 @@
       text-align: center;
     }
 
-    /* Container box */
     .container {
       background: rgba(255, 255, 255, 0.1);
       padding: 40px;
@@ -27,7 +25,6 @@
       width: 90%;
     }
 
-    /* Heading */
     h1 {
       font-size: 2.2rem;
       margin-bottom: 10px;
@@ -40,7 +37,6 @@
       color: #e0e0e0;
     }
 
-    /* Input and button */
     input[type="number"] {
       padding: 10px;
       width: 200px;
@@ -65,7 +61,6 @@
       background-color: #e85c50;
     }
 
-    /* Forecast result */
     .result {
       margin-top: 25px;
       font-size: 1.2rem;
@@ -89,7 +84,7 @@
 
     {% if forecast is not none %}
       <div class="result">
-        Day {{n_days}} → Forecasted Price: <span style="color:#ffdd57;">${{forecast}}</span>
+        Day {{day}} → Forecasted Price: <span style="color:#ffdd57;">${{forecast}}</span>
       </div>
     {% endif %}
   </div>
