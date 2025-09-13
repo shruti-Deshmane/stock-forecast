@@ -1,0 +1,82 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+
+    /* Flexbox → Center everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Gradient background */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Prediction container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Title */
+h1 {
+    margin-bottom: 10px;
+    color: #00eaff;
+    font-size: 28px;
+}
+
+/* Subheading / Info */
+.info {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* Input */
+input[type=number] {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    background: #00d9ff;
+    color: #000;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #008cba;
+    color: #fff;
+}
+
+/* Result */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 255, 136, 0.9);
+    color: #000;
+    border-radius: 10px;
+    font-weight: bold;
+}
